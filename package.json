@@ -1,0 +1,24 @@
+{
+    "name": "bookathon",
+    "version": "1.0.0",
+    "description": "Book tracking app built using the MERN STACK",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ialoko/Bookathon.git"
+    },
+    "author": "iyiola aloko",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ialoko/Bookathon/issues"
+    },
+    "homepage": "https://github.com/ialoko/Bookathon#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "mongoose": "^6.5.3"
+    }
+}
