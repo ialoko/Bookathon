@@ -5,10 +5,11 @@ const Schema = mongoose.Schema;
 const BookSchema = new Schema({
     title: String,
     author: String,
-    description: String
+    description: String,
+    finished: Boolean
 });
 
 // Create model for todo
 const Book = mongoose.model('book', BookSchema);
 
-module.exports = Todo;
+module.exports = Book;
