@@ -4,7 +4,7 @@ const Book = require('../models/book');
 
 router.get('/books', (req, res, next) => {
     // get all books
-    Book.find({})
+    Book.find()
         .then((data) => res.json(data))
         .catch(next);
 });

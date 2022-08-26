@@ -9,7 +9,7 @@ const BookSchema = new Schema({
     finished: Boolean
 });
 
-// Create model for todo
+// Create model for Book
 const Book = mongoose.model('book', BookSchema);
 
 module.exports = Book;
