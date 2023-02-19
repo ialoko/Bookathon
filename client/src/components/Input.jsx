@@ -74,7 +74,7 @@ class Input extends Component {
         this.addBookInfo(author,title,subject);
     };
 
-    handleChange = (e) => {
+    addEbookNo = (e) => {
         this.setState({
             ebookNo: e.target.value,
         });
@@ -88,18 +88,25 @@ class Input extends Component {
             description: subject, 
             img: imgString,
         });
+        alert("Book Information has been succesfully pulled");
     };
-
+    searchBooks = () => {
+        window.open("https://www.gutenberg.org/browse/scores/top#books-last30");
+    };
+//finish render method and then test
     render() {
-        let { action } = this.state;
-        return ( < div >
-            <
-            input type = "text"
-            onChange = { this.handleChange }
-            value = { action }
-            /> <
-            button onClick = { this.addBook } > add book < /button> < /
-            div >
+        let { title, author, ebookNo, img } = this.state;
+        return ( 
+        <div>
+            <h1 onClick = { this.searchBooks } > Search for books on Project Gutenberg to add</h1> 
+            <input type = "text" onChange = { this.addEbookNo } value = { ebookNo }/> 
+            <button onClick = { this.getBookInfo } > add ebook number </button> 
+
+            <h1>Is this the book you are looking for?</h1>
+            <p> Title : {title} <br/>  Author : {author} <br/> </p>
+            <img src= {img} alt="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"></img>
+            <button onClick = { this.addBook} > Add Book</button> 
+        </div >
         );
     }
 }
