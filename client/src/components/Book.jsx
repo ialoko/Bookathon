@@ -41,7 +41,8 @@ class Book extends Component {
       .put(`/api/books/${id}/${complete}`)
       .then((res) => {
         if (res.data) {
-          this.getBooks();
+            alert(complete)
+            this.getBooks();
         }
       })
       .catch((err) => console.log(err));
