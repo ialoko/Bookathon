@@ -101,7 +101,7 @@ class Input extends Component {
 
             <h1>Is this the book you are looking for?</h1>
             <p> Title : {title} <br/>  Author : {author} <br/> Description : {description} <br/> </p>
-            <img src= {img} onerror="this.onerror=null; this.remove()"></img>
+            <img src= {img} onerror="this.onerror=null; this.remove()" alt = ""></img>
             <br/><button onClick = { this.addBook} > Add Book</button> 
         </div >
         );

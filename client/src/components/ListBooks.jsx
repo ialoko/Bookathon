@@ -9,7 +9,7 @@ const ListBooks = ({ books, deleteBook, handleFinished }) => {
             <div>
                 <li key={book._id}>
                 <p> Title : {book.title} <br/>  Author : {book.author} <br/> </p>
-                <img src= {book.img} alt="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"></img>
+                <img src= {book.img} alt="Book cover"></img>
                 <br/>
                 <p>Description : {book.description} <br/></p>
                 <label><input type="checkbox" checked={book.finished} onChange={() => handleFinished(book._id, !book.finished)} /> Completed</label>
