@@ -101,7 +101,7 @@ class Input extends Component {
 
             <h1>Is this the book you are looking for?</h1>
             <p> Title : {title} <br/>  Author : {author} <br/> Description : {description} <br/> </p>
-            <img src= {img} alt="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2048px-No_image_available.svg.png"></img>
+            <img src= {img} onerror="this.onerror=null; this.remove()"></img>
             <br/><button onClick = { this.addBook} > Add Book</button> 
         </div >
         );
