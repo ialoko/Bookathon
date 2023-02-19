@@ -6,7 +6,9 @@ const BookSchema = new Schema({
     title: String,
     author: String,
     description: String,
-    finished: Boolean
+    finished: Boolean,
+    img: String,
+    ebookNo: String
 });
 
 // Create model for Book
