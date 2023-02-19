@@ -30,7 +30,7 @@ class Input extends Component {
                 .post('/api/books', book)
                 .then((res) => {
                     if (res.data) {
-                        this.props.getTodos();
+                        this.props.getBooks();
                         this.setState({
                             title: '',
                             author: '',
