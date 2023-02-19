@@ -1,11 +1,11 @@
 import React from 'react';
-import Input from './components/Input';
+import Book from './components/Book';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
-      <Input />
+      <Book />
     </div>
   );
 };

@@ -18,6 +18,14 @@ router.post('/books', (req, res, next) => {
         .catch(next);
 });
 
+//update finishec books
+router.put('/books/:id', (req, res, next) => {
+    // update book by id
+    Book.findOneAndUpdate({ _id: req.params.id }, { finished: req.params.complete })
+        .then((data) => res.json(data))
+        .catch(next);
+});
+
 router.delete('/books/:id', (req, res, next) => {
     // delete book by id
     Book.findOneAndDelete({ _id: req.params.id })
