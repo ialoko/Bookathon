@@ -97,8 +97,7 @@ class Input extends Component {
             <ToastContainer position="top-right"/>
             <h1 onClick = { this.searchBooks } > Search for books on Project Gutenberg to add</h1> 
             <input type = "text" onChange = { this.addEbookNo } value = { ebookNo }/> 
-            <button onClick = { this.getBookInfo } > Enter ebook number </button> 
-
+            <button id = "buttoneBook" onClick = { this.getBookInfo } > Enter ebook number </button> 
             <h1>Is this the book you are looking for?</h1>
             <p> Title : {title} <br/>  Author : {author} <br/> Description : {description} <br/> </p>
             <img src= {img} onerror="this.onerror=null; this.remove()" alt = ""></img>

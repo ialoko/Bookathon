@@ -20,6 +20,18 @@ input:focus {
     outline: none;
 }
 
+#buttoneBook {
+    width: 25%;
+    height: 45px;
+    border: none;
+    margin-left: 10px;
+    font-size: 20px;
+    background: #101113;
+    border-radius: 5px;
+    color: #787a80;
+    cursor: pointer;
+}
+
 button {
     width: 25%;
     height: 45px;
