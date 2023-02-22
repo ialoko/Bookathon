@@ -12,7 +12,7 @@ const ListBooks = ({ books, deleteBook, handleFinished }) => {
                 <img src= {book.img} alt="Book cover"></img>
                 <br/>
                 <p>Description : {book.description}</p>
-                <p class="container"> Complete <input type="checkbox" checked={book.finished} onChange={() => handleFinished(book._id, !book.finished)}/> <span class="checkmark"></span></p>
+                <p class="checkbox-wrapper"> <input className={book.finished ? "checked" : ""} type="checkbox" checked={book.finished} onChange={() => handleFinished(book._id, !book.finished)}/> <span class="checkmark"></span>Complete </p>
                 <button onClick={() => deleteBook(book._id)} > Delete Book</button> 
                 </li>
             </div>   

@@ -18,7 +18,7 @@ router.post('/books', (req, res, next) => {
         .catch(next);
 });
 
-//update finishec books
+//update finished books
 router.put('/books/:id/:complete', (req, res, next) => {
     // update book by id
     Book.findOneAndUpdate({ _id: req.params.id }, { finished: req.params.complete })
