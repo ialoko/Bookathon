@@ -5,7 +5,7 @@
  ## Installation
  Coming soon!
  
- Currently working on user authentification for this app. Once that is sorted out, I will deploy the app. Currently exploring using Kubernets or Render Deployment.
+ Currently working on user authentification for this app. Once that is sorted out, I will deploy the app. Currently exploring using Kubernetes or Render Deployment.
  
  ## Usage
  Search for book to read on Project Gutenberg.
