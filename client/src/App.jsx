@@ -1,7 +1,9 @@
 import React from 'react';
 import Book from './components/Book';
-//import Navbar from "./components/Navbar";
-//import { Route, Routes } from "react-router-dom";
+import Home from './components/Home';
+//import Reader from './components/Reader';
+import Navigation from "./components/Navigation";
+import { Route, Routes } from "react-router-dom";
 import './App.css';
 
 
@@ -9,7 +11,11 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      <Book/>
+      <Navigation/>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/book" element={<Book />} />
+        </Routes>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ReactReader } from 'react-reader'
 
-const Reader = () => {
+function Reader()  {
   const [location, setLocation] = useState(0)
   return (
     <div style={{ height: '100vh' }}>
@@ -16,5 +16,6 @@ const Reader = () => {
 }
 
 export default Reader
+
 
 //https://www.gutenberg.org/cache/epub/1513/pg1513-images.html
