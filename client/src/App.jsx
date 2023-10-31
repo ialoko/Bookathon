@@ -1,6 +1,7 @@
 import React from 'react';
 import Book from './components/Book';
 import Home from './components/Home';
+import Recommend from './components/Recommend';
 //import Reader from './components/Reader';
 import Navigation from "./components/Navigation";
 import { Route, Routes } from "react-router-dom";
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/book" element={<Book />} />
+            <Route path="/recommend" element={<Recommend />} />
         </Routes>
     </div>
   );

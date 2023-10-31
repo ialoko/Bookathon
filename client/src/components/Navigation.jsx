@@ -10,7 +10,7 @@ const Navigation= () =>{
           <Navbar.Brand href="/">Bookathon</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/book">My Books</Nav.Link>
-            <Nav.Link href="#recommend">Recommendations</Nav.Link>
+            <Nav.Link href="/recommend">Recommendations</Nav.Link>
             <Nav.Link href="#search">Search</Nav.Link>
           </Nav>
         </Container>
